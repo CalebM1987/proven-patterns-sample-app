@@ -1,6 +1,9 @@
 # proven-patterns-sample-app
 
-This template should help get you started developing with Vue 3 in Vite.
+This app is meant to serve as a demo app for my [Proven Patterns for Creating Custom Mapping Applications](https://gis.bolton-menk.com/presentations/proven-patterns-for-custom-apps-2024/) talk.
+
+> this is meant to be a very simple app, and to serve as a basic template that can be extended to incorporate more custom functionality. This provides basic functionality to allow you to switch between different configurations/deployments.
+
 
 ## Recommended IDE Setup
 
