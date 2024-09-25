@@ -8,3 +8,6 @@ apps:
   - id: wildfires
     path: wildfires/config.yml
     name: US Wildfires
+  - id: secure
+    path: secure/config.yml
+    name: OAuth Example

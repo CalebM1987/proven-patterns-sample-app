@@ -31,7 +31,7 @@ export async function useMap(container: HTMLDivElement, options: MapConfig){
   const credKey = 'SAMPLE_APP_SESSION'
   IdentityManager.on('credential-create', (evt)=> {
     log('created esri credential: ', evt)
-    localStorage.setItem(credKey, IdentityManager.toJSON())
+    localStorage.setItem(credKey, JSON.stringify(IdentityManager.toJSON()))
   })
 
   // check for existing cached credentials
