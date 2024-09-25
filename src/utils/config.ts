@@ -34,7 +34,6 @@ export async function loadConfig(){
       inputPlaceholder: 'Select an application ID',
       showCancelButton: true
     })
-    console.log('SELECTED APP ID: ', value)
     // set app ID to value
     appId = value
 
@@ -50,8 +49,6 @@ export async function loadConfig(){
     const state = { additionalInformation: 'Added Application ID to url'}
     window.history.pushState(state, document.title, url.href)
   }
-
-  console.log('APPS: ', apps)
 
   const configInfo = apps.find(c => c.id === appId)
 

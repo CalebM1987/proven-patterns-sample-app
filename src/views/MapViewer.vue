@@ -31,7 +31,9 @@ onMounted(async ()=> {
 
 <template>
   <div class="map-wrapper">
-    <div class="esri-map-container" ref="esriMap"></div>
+    <div class="esri-map-container" ref="esriMap">
+      <slot></slot>
+    </div>
   </div>
 </template>
 

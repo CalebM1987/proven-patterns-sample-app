@@ -27,7 +27,6 @@ const defaultTheme = {
 async function main(){
 
   const config = await loadConfig()
-  console.log('CONFIG: ', config)
 
   // get app store - have to load this after createPinia()
   const { useAppStore } = await import('./stores')
