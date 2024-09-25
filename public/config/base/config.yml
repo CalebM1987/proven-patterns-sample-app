@@ -1,0 +1,43 @@
+app:
+  title: Base
+  name: Proven Patterns
+  version: '1.0'
+  theme:
+    primary: '#1976D2'
+    # primary: red
+    secondary: '#26A69A'
+    accent: '#9C27B0'
+    dark: '#1D1D1D'
+    positive: '#21BA45'
+    negative: '#C10015'
+    info: '#31CCEC'
+    warning: '#F2C037'
+
+map:
+  basemap: streets-night-vector
+  basemapDark: streets-night-vector
+  basemapLight: topo-vector
+  mapView:
+    center:
+      - -93.999
+      - 35.16
+    zoom: 4
+  widgets:
+    - name: Search
+      ui:
+        position: top-right
+        index: 0
+    - name: BasemapGallery
+      expand:
+        expandTooltip: Show Basemap Gallery
+        collapseTooltip: Hide Basemap Gallery
+      ui:
+        position: top-right
+    - name: Home
+      ui: top-left
+    - name: LayerList
+      expand:
+        expandTooltip: Show Layer List
+        collapseTooltip: Hide Layer List
+      ui:
+        position: top-left

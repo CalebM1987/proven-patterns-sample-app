@@ -1,0 +1,10 @@
+apps:
+  - id: base
+    path: base/config.yml
+    name: Base App Config
+  - id: commute-alternatives
+    path: commute-alternatives/config.yml
+    name: Commute Alternatives
+  - id: wildfires
+    path: wildfires/config.yml
+    name: US Wildfires

@@ -1,0 +1,53 @@
+app:
+  title: Commute Alternatives
+  name: Proven Patterns
+  version: '1.0'
+  theme:
+    primary: '#780000'
+    secondary: '#c1121f'
+    accent: '#9fdf0d5'
+    dark: '#1D1D1D'
+    positive: '#21BA45'
+    negative: '#C10015'
+    info: '#003049'
+    warning: '#F2C037'
+
+map:
+  basemap: streets-night-vector
+  basemapDark: streets-night-vector
+  basemapLight: topo-vector
+  webmap:
+    portalItem:
+      id: cabbd03603ce405bbacac205034b7143
+
+  widgets:
+    - name: Search
+      ui:
+        position: top-right
+        index: 0
+    - name: BasemapGallery
+      expand:
+        expandTooltip: Show Basemap Gallery
+        collapseTooltip: Hide Basemap Gallery
+      ui:
+        position: top-right
+    - name: Home
+      ui: top-left
+    - name: Locate
+      options:
+        goToLocationEnabled: true
+        geolocationOptions:
+          maximumAge: 30000
+      ui:
+        position: top-left
+    - name: LayerList
+      expand:
+        expandTooltip: Show Layer List
+        collapseTooltip: Hide Layer List
+      ui:
+        position: top-left
+    - name: Legend
+      expand: 
+        expandTooltip: Show Legend
+        collapseTooltip: Hide Legend
+      ui: top-left

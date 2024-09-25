@@ -1,0 +1,62 @@
+{
+  "name": "proven-patterns",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/style.css",
+    "dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && vue-tsc && vite build",
+    "build:rollup": "cross-env NODE_ENV=production rollup --config rollup.config.js",
+    "build:examples-app": "rollup -c rollup.example.config.js",
+    "clean": "rimraf lib example/dist",
+    "build:vite": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "peerDependencies": {
+    "@arcgis/core": "^4.30.9",
+    "@quasar/extras": "^1.16.12",
+    "pinia": "^2.1.7",
+    "quasar": "^2.17.0",
+    "vue": "^3.5.8"
+  },
+  "dependencies": {
+    "@types/debug": "^4.1.12",
+    "@vueuse/core": "^11.1.0",
+    "debug": "^4.3.7",
+    "js-yaml": "^4.1.0",
+    "sweetalert2": "^11.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@quasar/vite-plugin": "^1.7.0",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.14.5",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "cross-env": "^7.0.2",
+    "npm-run-all2": "^6.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "sass": "^1.79.3",
+    "typescript": "~5.4.0",
+    "vite": "^5.3.1",
+    "vite-plugin-dts": "^4.2.2",
+    "vite-plugin-externalize-deps": "^0.8.0",
+    "vite-plugin-vue-devtools": "^7.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
